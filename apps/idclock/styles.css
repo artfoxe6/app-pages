@@ -1,0 +1,127 @@
+@import url("../../assets/styles.css");
+
+:root {
+  color-scheme: dark;
+  --background: #060912;
+  --surface: #0d1420;
+  --text: #f4f8f7;
+  --muted: #9aa7ad;
+  --line: rgba(255, 255, 255, 0.11);
+  --accent: #71f0c4;
+}
+
+body {
+  background:
+    radial-gradient(circle at 72% 34%, rgba(49, 125, 116, 0.18), transparent 24%),
+    var(--background);
+}
+
+.app-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  align-items: center;
+  gap: 8vw;
+}
+
+.app-hero-copy > * {
+  animation: enter 700ms both;
+}
+
+.app-hero-copy > :nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.app-hero-copy > :nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.app-hero-copy > :nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.app-hero h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", sans-serif;
+  font-size: clamp(64px, 10vw, 128px);
+  font-weight: 760;
+}
+
+.clock-face {
+  display: flex;
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 0.04em;
+  margin: auto;
+  border-radius: 23%;
+  background: radial-gradient(circle at 50% 42%, #152e50, #081327 65%, #040a16);
+  color: var(--accent);
+  font-size: clamp(54px, 7.6vw, 90px);
+  font-weight: 720;
+  letter-spacing: -0.075em;
+  box-shadow: 0 42px 100px rgba(0, 0, 0, 0.5), 0 0 80px rgba(113, 240, 196, 0.08);
+  animation: enter 800ms 140ms both;
+}
+
+.clock-face i {
+  margin: 0 0.04em;
+  font-style: normal;
+  animation: pulse 1s steps(1, end) infinite;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.feature-row {
+  display: grid;
+  gap: 6px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.feature-row strong {
+  font-size: 20px;
+}
+
+.feature-row small {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.28;
+  }
+}
+
+@media (max-width: 760px) {
+  .app-hero {
+    grid-template-columns: 1fr;
+    gap: 52px;
+    padding-top: 96px;
+  }
+
+  .clock-face {
+    width: min(72vw, 310px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
