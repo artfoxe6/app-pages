@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CopyManager 帮助与反馈：剪贴板监听、自动粘贴、历史数据与常见问题。">
+    <title>CopyManager 帮助与反馈</title>
+    <link rel="stylesheet" href="../../assets/document.css">
+  </head>
+  <body>
+    <main class="document">
+      <a class="back" href="./">← 返回 CopyManager</a>
+      <p class="eyebrow">SUPPORT</p>
+      <h1>CopyManager 帮助与反馈</h1>
+      <p class="meta">更新日期：2026 年 7 月 25 日</p>
+
+      <h2>为什么没有记录复制内容？</h2>
+      <p>请确认 CopyManager 正在运行且剪贴板监听没有暂停。密码管理器、带有敏感或临时标记的内容，以及你在设置中排除的应用不会写入历史。</p>
+
+      <h2>为什么自动粘贴没有生效？</h2>
+      <p>macOS 用户需要在“系统设置 → 隐私与安全性 → 辅助功能”中允许 CopyManager。Linux X11 使用 XTest；Wayland 环境需要可用的 <code>wtype</code> 或 <code>ydotool</code>，且仍可能受桌面环境安全策略限制。即使无法自动粘贴，复制到系统剪贴板仍可正常使用。</p>
+
+      <h2>历史数据保存在哪里？</h2>
+      <p>文本和元数据保存在本地 SQLite 数据库中，图片保存在本地媒体目录。你可以使用应用内导入/导出功能备份和恢复历史。Mac App Store 版本还可由你主动开启私有 iCloud 同步。</p>
+
+      <h2>如何删除数据？</h2>
+      <p>你可以在应用中删除单个条目、按规则自动清理或清空历史。执行不可撤销的清理前，请先导出需要保留的数据。</p>
+
+      <h2>联系支持</h2>
+      <p>请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，并说明操作系统、CopyManager 版本、问题发生时间和复现步骤。请勿发送密码、令牌或不必要的剪贴板隐私内容。</p>
+
+      <h2>相关文档</h2>
+      <p>你还可以查看<a href="user-guide.html">使用说明</a>、<a href="privacy-policy.html">隐私政策</a>和<a href="terms-of-service.html">用户协议</a>。</p>
+    </main>
+  </body>
+</html>
