@@ -3,35 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="分秒支持页面：实时活动、灵动岛和本地设置常见问题。">
-    <title>分秒支持</title>
+    <meta name="description" content="分秒支持页面：实时活动、灵动岛和本地设置常见问题。" data-i18n-content="support.description">
+    <title data-i18n="support.title">分秒支持</title>
     <link rel="stylesheet" href="../../assets/document.css">
+    <link rel="stylesheet" href="language.css">
+    <script src="localization.js" defer></script>
   </head>
   <body>
     <main class="document">
-      <a class="back" href="./">← 返回分秒</a>
-      <p class="eyebrow">SUPPORT</p>
-      <h1>分秒使用支持</h1>
-      <p class="meta">适用版本：1.0　·　更新日期：2026 年 7 月 25 日</p>
+      <div class="document-toolbar">
+        <a class="back" href="./" data-local-link data-i18n="common.back">← 返回分秒</a>
+        <nav class="language-switcher" aria-label="选择语言" data-i18n-aria-label="common.languageLabel">
+          <a href="?lang=zh" data-language="zh" aria-label="中文"><span class="language-full">中文</span><span class="language-short">中</span></a>
+          <a href="?lang=ja" data-language="ja" aria-label="日本語"><span class="language-full">日本語</span><span class="language-short">日</span></a>
+          <a href="?lang=ko" data-language="ko" aria-label="한국어"><span class="language-full">한국어</span><span class="language-short">한</span></a>
+          <a href="?lang=en" data-language="en" aria-label="English"><span class="language-full">English</span><span class="language-short">EN</span></a>
+        </nav>
+      </div>
+      <p class="eyebrow" data-i18n="support.eyebrow">使用支持</p>
+      <h1 data-i18n="support.heading">分秒使用支持</h1>
+      <p class="meta" data-i18n="support.meta">适用版本：1.0 · 更新日期：2026 年 7 月 25 日</p>
 
-      <p>“分秒”是一款本地运行的 iPhone 时钟应用，支持全屏表盘、锁屏实时活动和灵动岛显示。</p>
+      <p data-i18n="support.intro">“分秒”是一款本地运行的 iPhone 时钟应用，支持全屏表盘、锁屏实时活动和灵动岛显示。</p>
 
-      <h2>为什么实时活动无法开启？</h2>
-      <p>请在系统设置中确认已允许“分秒”使用实时活动。灵动岛显示需要受支持的 iPhone；其他兼容设备会在锁定屏幕显示实时活动。</p>
+      <h2 data-i18n="support.liveTitle">为什么实时活动无法开启？</h2>
+      <p data-i18n="support.liveText">请在系统设置中确认已允许“分秒”使用实时活动。灵动岛显示需要受支持的 iPhone；其他兼容设备会在锁定屏幕显示实时活动。</p>
 
-      <h2>为什么实时活动会自动停止？</h2>
-      <p>单次实时活动最多运行 8 小时。在 iOS 16 和 iOS 17 上，活动还会在跨越午夜时停止，以避免旧版系统的计时显示产生错误。</p>
+      <h2 data-i18n="support.stopTitle">为什么实时活动会自动停止？</h2>
+      <p data-i18n="support.stopText">单次实时活动最多运行 8 小时。在 iOS 16 和 iOS 17 上，活动还会在跨越午夜时停止，以避免旧版系统的计时显示产生错误。</p>
 
-      <h2>如何删除应用保存的设置？</h2>
-      <p>“分秒”只在设备本地保存表盘和时间格式等偏好。删除应用即可移除这些设置；应用没有服务器端账户或数据。</p>
+      <h2 data-i18n="support.deleteTitle">如何删除应用保存的设置？</h2>
+      <p data-i18n="support.deleteText">“分秒”只在设备本地保存表盘和时间格式等偏好。删除应用即可移除这些设置；应用没有服务器端账户或数据。</p>
 
-      <h2>联系支持</h2>
-      <p>请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，或通过 <a href="https://github.com/artfoxe6/idclock/issues">GitHub Issues</a> 报告问题和提出建议。请说明 iPhone 型号、iOS 版本以及复现步骤，但不要公开个人或敏感信息。</p>
-
-      <h2>IDClock Support</h2>
-      <p>IDClock runs locally on iPhone and provides a full-screen clock, Lock Screen Live Activities, and Dynamic Island presentation on supported devices.</p>
-      <p>For help or feedback, email <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a> or use <a href="https://github.com/artfoxe6/idclock/issues">GitHub Issues</a>. Include the iPhone model, iOS version, and reproduction steps, but do not post personal or sensitive information.</p>
-      <p>See the <a href="privacy-policy.html">privacy policy</a> for privacy information.</p>
+      <h2 data-i18n="support.contactTitle">联系支持</h2>
+      <p data-i18n-html="support.contactText">请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，或通过 <a href="https://github.com/artfoxe6/idclock/issues">GitHub Issues</a> 报告问题和提出建议。请说明 iPhone 型号、iOS 版本以及复现步骤，但不要公开个人或敏感信息。</p>
+      <p data-i18n-html="support.privacyText">隐私信息请参阅<a data-local-link href="privacy-policy.html">隐私政策</a>。</p>
     </main>
   </body>
 </html>
