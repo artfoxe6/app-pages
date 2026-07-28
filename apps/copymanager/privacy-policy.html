@@ -3,47 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CopyManager 隐私政策：了解剪贴板数据、本地存储、网络请求与可选 iCloud 同步。">
-    <title>CopyManager 隐私政策</title>
+    <meta name="description" content="CopyManager 隐私政策：了解剪贴板数据、本地存储、网络请求与可选 iCloud 同步。" data-i18n-content="privacy.description">
+    <title data-i18n="privacy.title">CopyManager 隐私政策</title>
     <link rel="stylesheet" href="../../assets/document.css">
+    <link rel="stylesheet" href="language.css">
+    <script src="localization.js" defer></script>
   </head>
   <body>
     <main class="document">
-      <a class="back" href="./">← 返回 CopyManager</a>
-      <p class="eyebrow">PRIVACY POLICY</p>
-      <h1>CopyManager 隐私政策</h1>
-      <p class="meta">生效日期：2026 年 7 月 18 日　·　更新日期：2026 年 7 月 25 日</p>
+      <div class="document-toolbar">
+        <a class="back" href="./" data-local-link data-i18n="common.back">← 返回 CopyManager</a>
+        <nav class="language-switcher" aria-label="选择语言" data-i18n-aria-label="common.languageLabel" data-language-switcher></nav>
+      </div>
+      <p class="eyebrow" data-i18n="privacy.eyebrow">PRIVACY POLICY</p>
+      <h1 data-i18n="privacy.heading">CopyManager 隐私政策</h1>
+      <p class="meta" data-i18n="privacy.meta">生效日期：2026 年 7 月 18 日　·　更新日期：2026 年 7 月 25 日</p>
 
-      <p>CopyManager（以下简称“本软件”）是一款跨平台剪贴板历史管理工具。本政策说明本软件在提供剪贴板记录、搜索、预览、自动粘贴、反馈及相关功能时如何处理数据。</p>
+      <p data-i18n="privacy.intro">CopyManager（以下简称“本软件”）是一款跨平台剪贴板历史管理工具。本政策说明本软件在提供剪贴板记录、搜索、预览、自动粘贴、反馈及相关功能时如何处理数据。</p>
 
-      <h2>1. 剪贴板数据</h2>
-      <p>本软件运行并启用剪贴板监听时，会处理你主动复制的文本、图片、本地文件路径以及来源应用名称。带有密码管理器或临时剪贴板敏感标记的内容会被忽略；你也可以配置额外排除的应用。</p>
+      <h2 data-i18n="privacy.clipboardTitle">1. 剪贴板数据</h2>
+      <p data-i18n="privacy.clipboardText">本软件运行并启用剪贴板监听时，会处理你主动复制的文本、图片、本地文件路径以及来源应用名称。带有密码管理器或临时剪贴板敏感标记的内容会被忽略；你也可以配置额外排除的应用。</p>
 
-      <h2>2. 本地存储</h2>
-      <p>默认情况下，剪贴板历史保存在你的本地设备。文本和元数据保存在 SQLite 数据库中，图片原图保存在本地媒体目录中。你可以随时暂停监听、删除单个条目或清空历史；卸载本软件或删除相关本地数据会移除设备上的历史。</p>
+      <h2 data-i18n="privacy.storageTitle">2. 本地存储</h2>
+      <p data-i18n="privacy.storageText">默认情况下，剪贴板历史保存在你的本地设备。文本和元数据保存在 SQLite 数据库中，图片原图保存在本地媒体目录中。你可以随时暂停监听、删除单个条目或清空历史；卸载本软件或删除相关本地数据会移除设备上的历史。</p>
 
-      <h2>3. 可选 iCloud 同步</h2>
-      <p>Mac App Store 版本允许你主动开启 iCloud 同步。开启后，文本和图片历史会保存到你的私有 CloudKit 数据库，以便在使用同一 Apple 账户的设备间同步；文件条目、文件路径和来源应用信息不会上传。iCloud 与 CloudKit 由 Apple 按其政策处理。直装版本不提供 iCloud 同步。</p>
+      <h2 data-i18n="privacy.icloudTitle">3. 可选 iCloud 同步</h2>
+      <p data-i18n="privacy.icloudText">Mac App Store 版本允许你主动开启 iCloud 同步。开启后，文本和图片历史会保存到你的私有 CloudKit 数据库，以便在使用同一 Apple 账户的设备间同步；文件条目、文件路径和来源应用信息不会上传。iCloud 与 CloudKit 由 Apple 按其政策处理。直装版本不提供 iCloud 同步。</p>
 
-      <h2>4. 网络请求与支持数据</h2>
+      <h2 data-i18n="privacy.networkTitle">4. 网络请求与支持数据</h2>
       <ul>
-        <li>你主动提交反馈时，姓名（可选）、邮箱、反馈内容、软件版本和操作系统版本会发送到 CopyManager 支持服务。</li>
-        <li>直装版本会访问 CopyManager 服务进行许可证校验和更新检查，并每日发送一次活动记录，其中包含随机安装 ID、操作系统、CPU 架构、软件版本以及存在时的激活码。</li>
-        <li>Mac App Store 版本使用 Apple StoreKit 处理购买，不包含直装许可证、自更新和活动上报功能。</li>
+        <li data-i18n="privacy.network1">你主动提交反馈时，姓名（可选）、邮箱、反馈内容、软件版本和操作系统版本会发送到 CopyManager 支持服务。</li>
+        <li data-i18n="privacy.network2">直装版本会访问 CopyManager 服务进行许可证校验和更新检查，并每日发送一次活动记录，其中包含随机安装 ID、操作系统、CPU 架构、软件版本以及存在时的激活码。</li>
+        <li data-i18n="privacy.network3">Mac App Store 版本使用 Apple StoreKit 处理购买，不包含直装许可证、自更新和活动上报功能。</li>
       </ul>
-      <p>上述请求不包含剪贴板内容。我们不会出售剪贴板数据，也不使用第三方广告或跨应用跟踪 SDK。</p>
+      <p data-i18n="privacy.networkText">上述请求不包含剪贴板内容。我们不会出售剪贴板数据，也不使用第三方广告或跨应用跟踪 SDK。</p>
 
-      <h2>5. 系统权限</h2>
-      <p>自动粘贴是可选功能。在 macOS 上，仅当你使用该功能时才需要 Accessibility（辅助功能）权限，以发送粘贴快捷键。拒绝该权限不会影响复制和剪贴板历史功能。</p>
+      <h2 data-i18n="privacy.permissionsTitle">5. 系统权限</h2>
+      <p data-i18n="privacy.permissionsText">自动粘贴是可选功能。在 macOS 上，仅当你使用该功能时才需要 Accessibility（辅助功能）权限，以发送粘贴快捷键。拒绝该权限不会影响复制和剪贴板历史功能。</p>
 
-      <h2>6. 你的选择</h2>
-      <p>你可以暂停剪贴板监听、关闭敏感内容保护或 iCloud 同步、清理历史记录，并通过系统设置撤销相关权限。提交反馈前，你可以自行删除不希望发送的信息。</p>
+      <h2 data-i18n="privacy.choicesTitle">6. 你的选择</h2>
+      <p data-i18n="privacy.choicesText">你可以暂停剪贴板监听、关闭敏感内容保护或 iCloud 同步、清理历史记录，并通过系统设置撤销相关权限。提交反馈前，你可以自行删除不希望发送的信息。</p>
 
-      <h2>7. 政策更新</h2>
-      <p>如果功能或数据处理方式发生变化，本政策可能相应更新，并在本页面标注更新日期。</p>
+      <h2 data-i18n="privacy.updatesTitle">7. 政策更新</h2>
+      <p data-i18n="privacy.updatesText">如果功能或数据处理方式发生变化，本政策可能相应更新，并在本页面标注更新日期。</p>
 
-      <h2>8. 联系我们</h2>
-      <p>如对本政策或数据处理有疑问，请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，或查看<a href="support.html">帮助与反馈</a>。</p>
+      <h2 data-i18n="privacy.contactTitle">8. 联系我们</h2>
+      <p data-i18n-html="privacy.contactText">如对本政策或数据处理有疑问，请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，或查看<a data-local-link href="support.html">帮助与反馈</a>。</p>
     </main>
   </body>
 </html>
