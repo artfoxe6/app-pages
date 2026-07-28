@@ -3,49 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="檐下见长的使用说明、隐私政策、用户协议与支持信息。">
+    <meta name="description" content="檐下见长的使用说明、隐私政策、用户协议与支持信息。" data-i18n-content="home.description">
     <meta name="color-scheme" content="light dark">
-    <title>檐下见长 · 产品文档与支持</title>
+    <title data-i18n="home.title">檐下见长 · 产品文档与支持</title>
     <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="language.css">
+    <script src="localization.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../../" aria-label="App Pages 首页">
-        <span class="brand-mark" aria-hidden="true">檐</span>
-        <span>檐下见长</span>
+      <a class="brand" href="../../" aria-label="App Pages 首页" data-i18n-aria-label="common.homeLabel">
+        <span class="brand-mark" aria-hidden="true" data-i18n="common.brandMark">檐</span>
+        <span data-i18n="common.brand">檐下见长</span>
       </a>
-      <span class="header-note">檐下见长</span>
+      <nav class="language-switcher" aria-label="选择语言" data-i18n-aria-label="common.languageLabel">
+        <a href="?lang=zh" data-language="zh" aria-label="简体中文"><span class="language-full">简体中文</span><span class="language-short">简</span></a>
+        <a href="?lang=ja" data-language="ja" aria-label="日本語"><span class="language-full">日本語</span><span class="language-short">日</span></a>
+        <a href="?lang=ko" data-language="ko" aria-label="한국어"><span class="language-full">한국어</span><span class="language-short">한</span></a>
+        <a href="?lang=en" data-language="en" aria-label="English"><span class="language-full">English</span><span class="language-short">EN</span></a>
+      </nav>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">GROW TOGETHER</p>
-        <h1 id="page-title">小小积分，<br>看得见的成长。</h1>
-        <p class="lead">用家庭任务、积分奖励、长期目标和成长相册，把每天的进步记录下来。</p>
-        <a class="text-link" href="#documents">查看文档 <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow" data-i18n="home.eyebrow">一起成长</p>
+        <h1 id="page-title" data-i18n-html="home.heading">小小积分，<br>看得见的成长。</h1>
+        <p class="lead" data-i18n="home.lead">用家庭任务、积分奖励、长期目标和成长相册，把每天的进步记录下来。</p>
+        <a class="text-link" href="#documents"><span data-i18n="home.viewDocuments">查看文档</span> <span aria-hidden="true">↓</span></a>
       </section>
 
       <section class="documents" id="documents" aria-labelledby="documents-title">
         <div class="section-heading">
-          <p class="eyebrow">DOCUMENTS</p>
-          <h2 id="documents-title">文档与支持</h2>
+          <p class="eyebrow" data-i18n="home.documentsEyebrow">文档</p>
+          <h2 id="documents-title" data-i18n="home.documentsTitle">文档与支持</h2>
         </div>
 
         <div class="document-list">
-          <a class="document-entry" href="user-guide.html">
-            <span><strong>使用说明</strong><small>快速入门、主要功能与常见操作</small></span>
+          <a class="document-entry" href="user-guide.html" data-local-link>
+            <span><strong data-i18n="home.guideTitle">使用说明</strong><small data-i18n="home.guideText">快速入门、主要功能与常见操作</small></span>
             <span aria-hidden="true">→</span>
           </a>
-          <a class="document-entry" href="privacy-policy.html">
-            <span><strong>隐私政策</strong><small>了解数据的保存、iCloud 同步与权限使用</small></span>
+          <a class="document-entry" href="privacy-policy.html" data-local-link>
+            <span><strong data-i18n="home.privacyTitle">隐私政策</strong><small data-i18n="home.privacyText">了解数据的保存、iCloud 同步与权限使用</small></span>
             <span aria-hidden="true">→</span>
           </a>
-          <a class="document-entry" href="terms-of-service.html">
-            <span><strong>用户协议</strong><small>了解使用规则、服务边界与责任说明</small></span>
+          <a class="document-entry" href="terms-of-service.html" data-local-link>
+            <span><strong data-i18n="home.termsTitle">用户协议</strong><small data-i18n="home.termsText">了解使用规则、服务边界与责任说明</small></span>
             <span aria-hidden="true">→</span>
           </a>
-          <a class="document-entry" href="support.html">
-            <span><strong>获取支持</strong><small>常见问题、故障排查与联系方式</small></span>
+          <a class="document-entry" href="support.html" data-local-link>
+            <span><strong data-i18n="home.supportTitle">获取支持</strong><small data-i18n="home.supportText">常见问题、故障排查与联系方式</small></span>
             <span aria-hidden="true">→</span>
           </a>
         </div>
@@ -53,7 +60,7 @@
     </main>
 
     <footer>
-      <span>© 2026 檐下见长</span>
+      <span data-i18n="common.copyright">© 2026 檐下见长</span>
       <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>
     </footer>
   </body>

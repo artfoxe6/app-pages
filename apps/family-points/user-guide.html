@@ -3,36 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="檐下见长使用说明">
-    <title>檐下见长使用说明</title>
+    <meta name="description" content="檐下见长使用说明" data-i18n-content="guide.description">
+    <title data-i18n="guide.title">檐下见长使用说明</title>
     <link rel="stylesheet" href="../../assets/document.css">
+    <link rel="stylesheet" href="language.css">
+    <script src="localization.js" defer></script>
   </head>
   <body>
     <main class="document">
-      <a class="back" href="./">← 返回檐下见长</a>
-      <p class="eyebrow">USER GUIDE</p>
-      <h1>檐下见长使用说明</h1>
-      <p class="meta">适用版本：1.0　·　更新日期：2026 年 7 月 25 日</p>
+      <div class="document-toolbar">
+        <a class="back" href="./" data-local-link data-i18n="common.back">← 返回檐下见长</a>
+        <nav class="language-switcher" aria-label="选择语言" data-i18n-aria-label="common.languageLabel">
+          <a href="?lang=zh" data-language="zh" aria-label="简体中文"><span class="language-full">简体中文</span><span class="language-short">简</span></a>
+          <a href="?lang=ja" data-language="ja" aria-label="日本語"><span class="language-full">日本語</span><span class="language-short">日</span></a>
+          <a href="?lang=ko" data-language="ko" aria-label="한국어"><span class="language-full">한국어</span><span class="language-short">한</span></a>
+          <a href="?lang=en" data-language="en" aria-label="English"><span class="language-full">English</span><span class="language-short">EN</span></a>
+        </nav>
+      </div>
+      <p class="eyebrow" data-i18n="guide.eyebrow">使用说明</p>
+      <h1 data-i18n="guide.heading">檐下见长使用说明</h1>
+      <p class="meta" data-i18n="guide.meta">适用版本：1.0 · 更新日期：2026 年 7 月 25 日</p>
 
-      <p>《檐下见长》用任务、积分、奖励和成长记录，帮助家人把每天的进步变得具体可见。</p>
+      <p data-i18n="guide.intro">《檐下见长》用任务、积分、奖励和成长记录，帮助家人把每天的进步变得具体可见。</p>
 
-      <h2>1. 开始使用</h2>
-      <p>首次打开 App 时，输入家长和孩子的昵称，然后选择几个常用任务模板。完成引导后，可以在“我们家 → 家庭成员”继续添加、编辑或停用成员。</p>
+      <h2 data-i18n="guide.startTitle">1. 开始使用</h2>
+      <p data-i18n="guide.startText">首次打开 App 时，输入家长和孩子的昵称，然后选择几个常用任务模板。完成引导后，可以在“我们家 → 家庭成员”继续添加、编辑或停用成员。</p>
 
-      <h2>2. 任务、完成与审核</h2>
-      <p>在“任务”中创建一次性或重复任务，设置参与成员、积分、子任务、截止时间和是否需要照片凭证。孩子提交后，家长可以在“今天”页审核；审核通过后才会增加积分。需要更正时，可在积分记录中执行冲正。</p>
+      <h2 data-i18n="guide.tasksTitle">2. 任务、完成与审核</h2>
+      <p data-i18n="guide.tasksText">在“任务”中创建一次性或重复任务，设置参与成员、积分、子任务、截止时间和是否需要照片凭证。孩子提交后，家长可以在“今天”页审核；审核通过后才会增加积分。需要更正时，可在积分记录中执行冲正。</p>
 
-      <h2>3. 奖励、目标与成长记录</h2>
-      <p>在“奖励”中设置家庭共同约定的兑换项目。申请兑换后，家长可以确认扣分，并在完成兑现后标记。“长期目标”适合每天打卡的习惯；“成长相册”可以用照片和一句话记下值得回顾的时刻。</p>
+      <h2 data-i18n="guide.rewardsTitle">3. 奖励、目标与成长记录</h2>
+      <p data-i18n="guide.rewardsText">在“奖励”中设置家庭共同约定的兑换项目。申请兑换后，家长可以确认扣分，并在完成兑现后标记。“长期目标”适合每天打卡的习惯；“成长相册”可以用照片和一句话记下值得回顾的时刻。</p>
 
-      <h2>4. 提醒、应用锁与 iCloud</h2>
-      <p>在“我们家 → 设置”中，可以开启每日提醒和任务时间提醒，使用 Face ID、Touch ID 或设备密码保护 App，以及开启 iCloud 自动备份。可在备份管理页面查看并手动选择恢复点；恢复前请确认时间，避免覆盖当前内容。</p>
+      <h2 data-i18n="guide.settingsTitle">4. 提醒、应用锁与 iCloud</h2>
+      <p data-i18n="guide.settingsText">在“我们家 → 设置”中，可以开启每日提醒和任务时间提醒，使用 Face ID、Touch ID 或设备密码保护 App，以及开启 iCloud 自动备份。可在备份管理页面查看并手动选择恢复点；恢复前请确认时间，避免覆盖当前内容。</p>
 
-      <h2>5. 邀请家人</h2>
-      <p>在设置中选择“邀请家人加入”，通过系统共享界面发送邀请。受邀人需在登录 iCloud 的兼容 Apple 设备上接受邀请。任务、积分、目标、奖励和照片会通过 iCloud 在已邀请成员之间同步。</p>
+      <h2 data-i18n="guide.inviteTitle">5. 邀请家人</h2>
+      <p data-i18n="guide.inviteText">在设置中选择“邀请家人加入”，通过系统共享界面发送邀请。受邀人需在登录 iCloud 的兼容 Apple 设备上接受邀请。任务、积分、目标、奖励和照片会通过 iCloud 在已邀请成员之间同步。</p>
 
-      <h2>6. 获取支持</h2>
-      <p>如果遇到问题，请先查看<a href="support.html">支持页面</a>。仍需要帮助时，请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，并附上设备型号、iOS 版本、App 版本和问题复现步骤。请不要在邮件中附上家人的私密内容或成长照片。</p>
+      <h2 data-i18n="guide.supportTitle">6. 获取支持</h2>
+      <p data-i18n-html="guide.supportText">如果遇到问题，请先查看<a data-local-link href="support.html">支持页面</a>。仍需要帮助时，请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，并附上设备型号、iOS 版本、App 版本和问题复现步骤。请不要在邮件中附上家人的私密内容或成长照片。</p>
     </main>
   </body>
 </html>
