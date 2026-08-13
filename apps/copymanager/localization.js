@@ -239,14 +239,6 @@ function renderLanguageSwitchers() {
   });
 }
 
-function readStoredLanguage() {
-  try {
-    return localStorage.getItem("copymanager-language");
-  } catch {
-    return null;
-  }
-}
-
 function canonicalLanguage(value) {
   if (!value) return null;
   const normalized = value.replace("-", "_").toLowerCase();
@@ -261,10 +253,10 @@ function detectLanguage() {
   const requested = canonicalLanguage(new URLSearchParams(location.search).get("lang"));
   if (requested) return requested;
 
-  const stored = canonicalLanguage(readStoredLanguage());
-  if (stored) return stored;
-
-  return canonicalLanguage(navigator.language) || "en";
+  const url = new URL(location.href);
+  url.searchParams.set("lang", "en");
+  location.replace(url.href);
+  return "en";
 }
 
 function lookup(dictionary, path) {
@@ -310,12 +302,6 @@ function applyLanguage(language) {
   });
 
   localizeLinks(language);
-
-  try {
-    localStorage.setItem("copymanager-language", language);
-  } catch {
-    // The selected language still applies when storage is unavailable.
-  }
 }
 
 renderLanguageSwitchers();

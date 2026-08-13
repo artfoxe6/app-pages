@@ -475,25 +475,13 @@ const translations = {
 
 const supportedLanguages = Object.keys(translations);
 
-function readStoredLanguage() {
-  try {
-    return localStorage.getItem("family-points-language");
-  } catch {
-    return null;
-  }
-}
-
 function detectLanguage() {
   const requested = new URLSearchParams(location.search).get("lang");
   if (supportedLanguages.includes(requested)) return requested;
 
-  const stored = readStoredLanguage();
-  if (supportedLanguages.includes(stored)) return stored;
-
-  const browserLanguage = navigator.language.toLowerCase();
-  if (browserLanguage.startsWith("zh")) return "zh";
-  if (browserLanguage.startsWith("ja")) return "ja";
-  if (browserLanguage.startsWith("ko")) return "ko";
+  const url = new URL(location.href);
+  url.searchParams.set("lang", "en");
+  location.replace(url.href);
   return "en";
 }
 
@@ -540,12 +528,6 @@ function applyLanguage(language) {
   });
 
   localizeLinks(language);
-
-  try {
-    localStorage.setItem("family-points-language", language);
-  } catch {
-    // The selected language still applies when storage is unavailable.
-  }
 }
 
 applyLanguage(detectLanguage());
