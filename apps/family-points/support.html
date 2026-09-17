@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="檐下见长支持与常见问题" data-i18n-content="support.description">
-    <title data-i18n="support.title">檐下见长支持</title>
+    <meta name="description" content="小家积分支持与常见问题" data-i18n-content="support.description">
+    <title data-i18n="support.title">小家积分支持</title>
     <link rel="stylesheet" href="../../assets/document.css">
     <link rel="stylesheet" href="language.css">
     <script src="localization.js" defer></script>
@@ -12,7 +12,7 @@
   <body>
     <main class="document">
       <div class="document-toolbar">
-        <a class="back" href="./" data-local-link data-i18n="common.back">← 返回檐下见长</a>
+        <a class="back" href="./" data-local-link data-i18n="common.back">← 返回小家积分</a>
         <nav class="language-switcher" aria-label="选择语言" data-i18n-aria-label="common.languageLabel">
           <a href="?lang=zh" data-language="zh" aria-label="简体中文"><span class="language-full">简体中文</span><span class="language-short">简</span></a>
           <a href="?lang=ja" data-language="ja" aria-label="日本語"><span class="language-full">日本語</span><span class="language-short">日</span></a>
@@ -21,25 +21,28 @@
         </nav>
       </div>
       <p class="eyebrow" data-i18n="support.eyebrow">使用支持</p>
-      <h1 data-i18n="support.heading">檐下见长使用支持</h1>
-      <p class="meta" data-i18n="support.meta">适用版本：1.0 · 更新日期：2026 年 8 月 2 日</p>
+      <h1 data-i18n="support.heading">小家积分使用支持</h1>
+      <p class="meta" data-i18n="support.meta">适用版本：1.0 · 更新日期：2026 年 9 月 17 日</p>
 
       <p data-i18n-html="support.intro">下面列出了常见问题的排查方法。更完整的功能说明请查看<a data-local-link href="user-guide.html">使用说明</a>。</p>
 
       <h2 data-i18n="support.notificationsTitle">为什么收不到提醒？</h2>
-      <p data-i18n="support.notificationsText">请先在 App 的“我们家 → 设置”中确认已开启提醒，再在 iPhone 或 iPad 的“设置 → 通知 → 檐下见长”中允许通知。如果任务提醒时间已经过去，请编辑任务并设置新的时间。</p>
+      <p data-i18n="support.notificationsText">请编辑任务，确认已设置具体时间并开启“到时提醒”，再到 iPhone 或 iPad 的“设置 → 通知 → 小家积分”允许通知。提醒只针对已启用提醒且仍在有效期内的任务；修改时间后，App 会重新安排通知。</p>
 
       <h2 data-i18n="support.backupTitle">为什么 iCloud 备份不可用？</h2>
-      <p data-i18n="support.backupText">请确认设备已登录 Apple 账号、已开启 iCloud Drive、网络正常且 iCloud 存储空间充足。模拟器上的 iCloud 功能可能受限，建议在已登录 iCloud 的真机上测试。</p>
+      <p data-i18n="support.backupText">请前往“家庭 → 设置 → 检查备份状态”运行诊断。诊断会检查 Apple 账号、iCloud 云盘容器和备份目录写入权限。还应确认网络正常且 iCloud 空间充足；模拟器功能可能受限，建议在已登录 iCloud 的真机上重试。</p>
 
       <h2 data-i18n="support.sharingTitle">可以邀请家人或多人实时同步吗？</h2>
-      <p data-i18n="support.sharingText">当前版本不提供家庭成员邀请、多人协作或实时同步。本 App 面向家长管理家庭数据；iCloud 功能用于创建可手动选择的备份恢复点，也可在登录同一 Apple 账号的设备上恢复数据。</p>
+      <p data-i18n="support.sharingText">当前版本不提供家庭成员邀请、多人协作或实时同步。iCloud 功能用于创建可手动选择的备份恢复点，并可在登录同一 Apple 账号的设备上恢复数据；它不是实时同步服务。</p>
 
-      <h2 data-i18n="support.lockTitle">忘记应用锁怎么办？</h2>
-      <p data-i18n="support.lockText">应用锁使用 Face ID、Touch ID 或设备密码验证，本 App 不会另外保存一个密码。请使用设备密码解锁；如果设备验证不可用，请先在系统设置中恢复设备密码或生物识别。</p>
+      <h2 data-i18n="support.filesTitle">如何导出或导入备份文件？</h2>
+      <p data-i18n="support.filesText">前往“家庭 → 设置”，选择“导出备份文件”即可保存一个包含家庭数据与照片的 ZIP 文件。选择“从文件导入”后，App 会先校验文件并显示备份摘要；确认导入会替换当前本机家庭数据，而不是与现有数据合并。</p>
 
       <h2 data-i18n="support.restoreTitle">如何恢复误删的数据？</h2>
-      <p data-i18n="support.restoreText">如果之前已开启 iCloud 自动备份，请前往“我们家 → 设置 → 管理与恢复备份”，选择删除前的恢复点。恢复会更换当前家庭数据，请仔细确认备份时间。如果没有可用备份，已删除的数据可能无法恢复。</p>
+      <p data-i18n="support.restoreText">如果之前已开启 iCloud 自动备份，请前往“家庭 → 设置 → 管理与恢复备份”，选择删除前的恢复点；尚未完成首次设置时，也可从欢迎页进入 iCloud 恢复。恢复会替换当前家庭数据，请仔细确认备份时间。如果没有可用备份，已删除的数据可能无法恢复。</p>
+
+      <h2 data-i18n="support.languageTitle">如何切换语言或外观？</h2>
+      <p data-i18n="support.languageText">前往“家庭 → 设置”，可选择简体中文、English、日本語、한국어或跟随系统，并可选择浅色、深色或跟随系统外观。切换后，App 会立即刷新界面。</p>
 
       <h2 data-i18n="support.contactTitle">联系支持</h2>
       <p data-i18n-html="support.contactText">请发送邮件至 <a href="mailto:mckejy@gmail.com">mckejy@gmail.com</a>，并说明设备型号、iOS 版本、App 版本、屏幕上显示的错误信息和复现步骤。请不要发送真实姓名、私密家庭记录或成长照片。</p>
