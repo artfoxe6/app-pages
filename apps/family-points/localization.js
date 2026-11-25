@@ -31,7 +31,7 @@ const translations = {
       "description": "小家积分使用说明。",
       "eyebrow": "使用说明",
       "heading": "小家积分使用说明",
-      "meta": "适用版本：1.0 · 更新日期：2026 年 9 月 17 日",
+      "meta": "适用版本：2.2 · 更新日期：2026 年 11 月 25 日",
       "intro": "《小家积分》把家庭任务、挑战、积分和奖励放在一起，帮助全家建立清晰约定，也把每一次坚持和成长记录下来。",
       "startTitle": "1. 开始使用",
       "startText": "首次打开 App 时，可以使用推荐预设快速体验，也可以手动创建家庭并选择常用任务。已有数据时，可从 iCloud 备份或 ZIP 备份文件开始。完成引导后，可在“家庭 → 家庭成员”继续添加、编辑或停用成员。",
@@ -46,7 +46,7 @@ const translations = {
       "familyTitle": "4. 查看家庭成长记录",
       "familyText": "“家庭”集中管理成员、每周回顾、成长相册、积分指标和历史记录。成长相册可为一个瞬间保存多张照片；积分指标可自定义名称、图标与转换规则；每周回顾与历史记录用于了解任务、打卡、奖励和积分变化。",
       "familyUseTitle": "6. 家长使用方式",
-      "familyUseText": "本 App 面向家长或监护人，用于在一台设备上记录和管理家庭成员的任务、积分、奖励与成长内容。当前版本不提供家庭邀请、多人协作或实时同步；iCloud 只用于在同一 Apple 账号下创建和恢复备份。"
+      "familyUseText": "本 App 面向家长或监护人，用于记录和管理家庭成员的任务、积分、奖励与成长内容。可以在一台设备上使用，也可以通过家庭共享（“家庭 → 家庭共享 → 邀请家人”）让家人用各自的 Apple 账号加入，在自己的设备上同步同一个家庭，照片也会同步；共享的家庭数据保存在创建者的 iCloud 中。iCloud 备份则在同一 Apple 账号下创建和恢复。"
     },
     "privacy": {
       "title": "小家积分隐私政策",
@@ -157,7 +157,7 @@ const translations = {
       "description": "おうちスターのユーザーガイド。",
       "eyebrow": "ユーザーガイド",
       "heading": "おうちスター ユーザーガイド",
-      "meta": "対象バージョン：1.0 · 更新日：2026年9月17日",
+      "meta": "対象バージョン：2.2 · 更新日：2026年11月25日",
       "intro": "「おうちスター」は、家族のタスク、チャレンジ、ポイント、ごほうびをひとつにまとめ、毎日の約束と成長を記録するアプリです。",
       "startTitle": "1. はじめに",
       "startText": "初回起動時は、おすすめのプリセットですぐに試すか、家族を手動で作成してよく使うタスクを選べます。既存データがある場合は、iCloudバックアップまたはZIPバックアップファイルから始められます。設定後は「家族 → 家族メンバー」でメンバーの追加、編集、無効化ができます。",
@@ -172,7 +172,7 @@ const translations = {
       "familyTitle": "4. 家族の成長記録を見る",
       "familyText": "「家族」では、メンバー、週間ふりかえり、成長アルバム、ポイント項目、履歴を管理します。ひとつの思い出に複数の写真を保存でき、ポイント項目には名前、アイコン、変換ルールを設定できます。週間ふりかえりと履歴では、タスク、チェックイン、ごほうび、ポイントの変化を確認できます。",
       "familyUseTitle": "6. 保護者による利用",
-      "familyUseText": "本Appは、保護者が1台の端末で家族のタスク、ポイント、ごほうび、成長記録を管理するためのものです。現在のバージョンは家族の招待、複数人での共同編集、リアルタイム同期に対応していません。iCloudは同じApple Accountでバックアップを作成・復元するためにのみ使用します。"
+      "familyUseText": "本Appは、保護者が家族のタスク、ポイント、ごほうび、成長記録を管理するためのものです。1台の端末で使うことも、「家族と共有」（「家族」→「家族と共有」→「家族を招待」）で家族がそれぞれのApple Accountで参加し、自分の端末で同じ家族を同期することもできます。写真も同期され、共有された家族データは作成者のiCloudに保存されます。iCloudバックアップは同じApple Accountで作成・復元します。"
     },
     "privacy": {
       "title": "おうちスター プライバシーポリシー",
@@ -283,7 +283,7 @@ const translations = {
       "description": "칭찬나무 사용 설명서입니다.",
       "eyebrow": "사용 설명서",
       "heading": "칭찬나무 사용 설명서",
-      "meta": "지원 버전: 1.0 · 업데이트: 2026년 9월 17일",
+      "meta": "지원 버전: 2.2 · 업데이트: 2026년 11월 25일",
       "intro": "칭찬나무는 가족의 할 일, 챌린지, 포인트와 보상을 한곳에 모아 분명한 약속을 만들고 꾸준한 노력과 성장을 기록합니다.",
       "startTitle": "1. 시작하기",
       "startText": "앱을 처음 열면 추천 프리셋으로 바로 체험하거나 가족을 직접 만들고 자주 쓰는 할 일을 선택할 수 있습니다. 기존 데이터가 있다면 iCloud 백업이나 ZIP 백업 파일에서 시작할 수 있습니다. 설정 후 ‘가족 → 가족 구성원’에서 구성원을 추가, 편집 또는 비활성화할 수 있습니다.",
@@ -298,7 +298,7 @@ const translations = {
       "familyTitle": "4. 가족 성장 기록 보기",
       "familyText": "‘가족’에서 구성원, 주간 돌아보기, 성장 앨범, 포인트 유형과 기록을 관리합니다. 하나의 순간에 여러 사진을 저장할 수 있고, 포인트 유형에는 이름, 아이콘과 변환 규칙을 설정할 수 있습니다. 주간 돌아보기와 기록에서는 할 일, 체크인, 보상과 포인트 변화를 확인할 수 있습니다.",
       "familyUseTitle": "6. 보호자 사용 방식",
-      "familyUseText": "이 앱은 부모 또는 보호자가 한 기기에서 가족 구성원의 할 일, 포인트, 보상과 성장 기록을 관리하도록 설계되었습니다. 현재 버전은 가족 초대, 여러 사람의 공동 작업 또는 실시간 동기화를 제공하지 않습니다. iCloud는 동일한 Apple 계정에서 백업을 만들고 복원하는 데만 사용됩니다."
+      "familyUseText": "이 앱은 부모 또는 보호자가 가족 구성원의 할 일, 포인트, 보상과 성장 기록을 관리하도록 설계되었습니다. 한 기기에서 사용할 수도 있고, '가족과 공유'('가족' → '가족과 공유' → '가족 초대하기')로 가족이 각자의 Apple 계정으로 참여해 자신의 기기에서 같은 가족을 동기화할 수도 있습니다. 사진도 함께 동기화되며, 공유된 가족 데이터는 만든 사람의 iCloud에 저장됩니다. iCloud 백업은 동일한 Apple 계정에서 만들고 복원합니다."
     },
     "privacy": {
       "title": "칭찬나무 개인정보 처리방침",
@@ -409,7 +409,7 @@ const translations = {
       "description": "Homesprout user guide.",
       "eyebrow": "USER GUIDE",
       "heading": "Homesprout User Guide",
-      "meta": "Version: 1.0 · Updated: September 17, 2026",
+      "meta": "Version: 2.2 · Updated: November 25, 2026",
       "intro": "Homesprout brings family tasks, challenges, points, and rewards together so your household can make clear agreements and remember every bit of consistency and growth.",
       "startTitle": "1. Getting Started",
       "startText": "When you first open the app, use the recommended preset for a quick start or create your family manually and choose common tasks. If you already have data, start from an iCloud backup or a ZIP backup file. After setup, go to Family → Family Members to add, edit, or deactivate members.",
@@ -424,7 +424,7 @@ const translations = {
       "familyTitle": "4. Review Family Growth",
       "familyText": "Family brings together members, Weekly Review, the Growth Album, point types, and history. A single memory can contain multiple photos. Point types support custom names, icons, and conversion rules. Weekly Review and history summarize tasks, check-ins, rewards, and point changes.",
       "familyUseTitle": "6. Use by Parents and Guardians",
-      "familyUseText": "The app is intended for a parent or guardian to manage family members’ tasks, points, rewards, and growth content on one device. The current version does not provide family invitations, multi-user collaboration, or real-time sync. iCloud is used only to create and restore backups under the same Apple Account."
+      "familyUseText": "The app is intended for a parent or guardian to manage family members’ tasks, points, rewards, and growth content. You can use it on one device, or turn on Share with Family (Family → Share with Family → Invite Family) so family members join with their own Apple Accounts and keep the same family in sync on their own devices, photos included. Shared family data is stored in the creator's iCloud. iCloud backups are created and restored under the same Apple Account."
     },
     "privacy": {
       "title": "Homesprout Privacy Policy",
